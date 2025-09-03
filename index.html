@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marmaray Sefer Saatleri</title>
+    <link rel="manifest" href="manifest.json">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
     </style>
-    <!-- PWA Manifest dosyası bağlantısı -->
-    <link rel="manifest" href="./manifest.json">
-    <!-- Mobil cihazlar için tema rengini tanımlama -->
-    <meta name="theme-color" content="#2563EB"/>
-    <!-- iOS cihazları için uygulama simgesini tanımlama -->
-    <link rel="apple-touch-icon" href="./icons/icon-192x192.png">
 </head>
 <body class="bg-gray-100 font-sans p-4 flex flex-col items-center min-h-screen">
     <div class="container mx-auto max-w-lg mt-8 mb-4 bg-white p-6 rounded-3xl shadow-2xl">
@@ -101,280 +96,323 @@
                          'Zeytinburnu': '06:26',
                          'Kazlıçeşme': '06:30',
                          'Yenikapı': '06:34',
-                         'Sirkeci': '06:36',
-                         'Üsküdar': '06:40',
-                         'Ayrılık Çeşmesi': '06:43',
-                         'Söğütlüçeşme': '06:45',
-                         'Feneryolu': '06:48',
-                         'Göztepe': '06:50',
-                         'Erenköy': '06:52',
-                         'Suadiye': '06:54',
-                         'Bostancı': '06:57',
-                         'Küçükyalı': '06:59',
-                         'İdealtepe': '07:01',
-                         'Süreyya Plajı': '07:03',
-                         'Maltepe': '07:05',
-                         'Cevizli': '07:08',
-                         'Atalar': '07:10',
-                         'Başak': '07:12',
-                         'Kartal': '07:14',
+                         'Sirkeci': '06:38',
+                         'Üsküdar': '06:42',
+                         'Ayrılık Çeşmesi': '06:45',
+                         'Söğütlüçeşme': '06:48',
+                         'Feneryolu': '06:50',
+                         'Göztepe': '06:52',
+                         'Erenköy': '06:54',
+                         'Suadiye': '06:56',
+                         'Bostancı': '06:59',
+                         'Küçükyalı': '07:01',
+                         'İdealtepe': '07:03',
+                         'Süreyya Plajı': '07:05',
+                         'Maltepe': '07:07',
+                         'Cevizli': '07:09',
+                         'Atalar': '07:11',
+                         'Başak': '07:13',
+                         'Kartal': '07:15',
                          'Yunus': '07:17',
                          'Pendik': '07:20',
                          'Kaynarca': '07:22',
-                         'Tersane': '07:25',
-                         'Güzelyalı': '07:28',
-                         'Aydıntepe': '07:30',
-                         'İçmeler': '07:33',
-                         'Tuzla': '07:36',
-                         'Çayırova': '07:39',
-                         'Fatih': '07:41',
-                         'Osmangazi': '07:44',
-                         'Darıca': '07:47',
-                         'Gebze': '07:50'
-                    },
-                    regularInterval: 15,
-                    peakInterval: 15, // 15 minutes in peak
-                    weekendNightInterval: 20
+                         'Tersane': '07:24',
+                         'Güzelyalı': '07:26',
+                         'Aydıntepe': '07:28',
+                         'İçmeler': '07:30',
+                         'Tuzla': '07:32',
+                         'Çayırova': '07:35',
+                         'Fatih': '07:37',
+                         'Osmangazi': '07:39',
+                         'Darıca': '07:41',
+                         'Gebze': '07:44',
+                    }
                 },
                 'Ataköy-Pendik': {
                     startStation: 'Ataköy',
                     endStation: 'Pendik',
                     stations: stations.slice(stations.indexOf('Ataköy'), stations.indexOf('Pendik') + 1),
                     firstDeparture: {
-                         'Ataköy': '06:09',
-                         'Bakırköy': '06:12',
-                         'Yenimahalle': '06:13',
-                         'Zeytinburnu': '06:15',
-                         'Kazlıçeşme': '06:19',
-                         'Yenikapı': '06:23',
-                         'Sirkeci': '06:25',
-                         'Üsküdar': '06:29',
-                         'Ayrılık Çeşmesi': '06:32',
-                         'Söğütlüçeşme': '06:34',
-                         'Feneryolu': '06:37',
-                         'Göztepe': '06:39',
-                         'Erenköy': '06:41',
-                         'Suadiye': '06:43',
-                         'Bostancı': '06:46',
-                         'Küçükyalı': '06:48',
-                         'İdealtepe': '06:50',
-                         'Süreyya Plajı': '06:52',
-                         'Maltepe': '06:54',
-                         'Cevizli': '06:57',
-                         'Atalar': '06:59',
-                         'Başak': '07:01',
-                         'Kartal': '07:03',
-                         'Yunus': '07:06',
-                         'Pendik': '07:09'
-                    },
-                    regularInterval: 8,
-                    peakInterval: 8, // 8 minutes in peak
-                    weekendNightInterval: 8
+                        'Ataköy': '06:09',
+                        'Bakırköy': '06:12',
+                        'Yenimahalle': '06:13',
+                        'Zeytinburnu': '06:16',
+                        'Kazlıçeşme': '06:20',
+                        'Yenikapı': '06:24',
+                        'Sirkeci': '06:28',
+                        'Üsküdar': '06:32',
+                        'Ayrılık Çeşmesi': '06:35',
+                        'Söğütlüçeşme': '06:38',
+                        'Feneryolu': '06:40',
+                        'Göztepe': '06:42',
+                        'Erenköy': '06:44',
+                        'Suadiye': '06:46',
+                        'Bostancı': '06:49',
+                        'Küçükyalı': '06:51',
+                        'İdealtepe': '06:53',
+                        'Süreyya Plajı': '06:55',
+                        'Maltepe': '06:57',
+                        'Cevizli': '06:59',
+                        'Atalar': '07:01',
+                        'Başak': '07:03',
+                        'Kartal': '07:05',
+                        'Yunus': '07:07',
+                        'Pendik': '07:10',
+                    }
+                },
+                'Gebze-Halkalı': {
+                    startStation: 'Gebze',
+                    endStation: 'Halkalı',
+                    stations: stations.slice().reverse(),
+                     firstDeparture: {
+                        'Gebze': '06:05',
+                        'Darıca': '06:08',
+                        'Osmangazi': '06:10',
+                        'Fatih': '06:13',
+                        'Çayırova': '06:15',
+                        'Tuzla': '06:18',
+                        'İçmeler': '06:20',
+                        'Aydıntepe': '06:22',
+                        'Güzelyalı': '06:24',
+                        'Tersane': '06:26',
+                        'Kaynarca': '06:28',
+                        'Pendik': '06:31',
+                        'Yunus': '06:34',
+                        'Kartal': '06:37',
+                        'Başak': '06:39',
+                        'Atalar': '06:41',
+                        'Cevizli': '06:43',
+                        'Maltepe': '06:46',
+                        'Süreyya Plajı': '06:48',
+                        'İdealtepe': '06:50',
+                        'Küçükyalı': '06:52',
+                        'Bostancı': '06:55',
+                        'Suadiye': '06:57',
+                        'Erenköy': '06:59',
+                        'Göztepe': '07:01',
+                        'Feneryolu': '07:03',
+                        'Söğütlüçeşme': '07:06',
+                        'Ayrılık Çeşmesi': '07:09',
+                        'Üsküdar': '07:13',
+                        'Sirkeci': '07:17',
+                        'Yenikapı': '07:21',
+                        'Kazlıçeşme': '07:25',
+                        'Zeytinburnu': '07:28',
+                        'Yenimahalle': '07:30',
+                        'Bakırköy': '07:32',
+                        'Ataköy': '07:35',
+                        'Yeşilyurt': '07:37',
+                        'Yeşilköy': '07:39',
+                        'Florya Akvaryum': '07:41',
+                        'Florya': '07:43',
+                        'Menekşe': '07:46',
+                        'Küçükçekmece': '07:48',
+                        'Mustafa Kemal': '07:50',
+                        'Halkalı': '07:53',
+                     }
+                },
+                'Pendik-Ataköy': {
+                    startStation: 'Pendik',
+                    endStation: 'Ataköy',
+                    stations: stations.slice(stations.indexOf('Pendik'), stations.indexOf('Ataköy') + 1).reverse(),
+                    firstDeparture: {
+                        'Pendik': '06:09',
+                        'Yunus': '06:12',
+                        'Kartal': '06:15',
+                        'Başak': '06:17',
+                        'Atalar': '06:19',
+                        'Cevizli': '06:21',
+                        'Maltepe': '06:24',
+                        'Süreyya Plajı': '06:26',
+                        'İdealtepe': '06:28',
+                        'Küçükyalı': '06:30',
+                        'Bostancı': '06:33',
+                        'Suadiye': '06:35',
+                        'Erenköy': '06:37',
+                        'Göztepe': '06:40',
+                        'Feneryolu': '06:42',
+                        'Söğütlüçeşme': '06:45',
+                        'Ayrılık Çeşmesi': '06:48',
+                        'Üsküdar': '06:52',
+                        'Sirkeci': '06:56',
+                        'Yenikapı': '07:00',
+                        'Kazlıçeşme': '07:04',
+                        'Zeytinburnu': '07:07',
+                        'Yenimahalle': '07:09',
+                        'Bakırköy': '07:11',
+                        'Ataköy': '07:14',
+                    }
                 }
             };
-
-            function getIntervalMinutes(now, lineName) {
-                const line = trainLines[lineName];
-                const day = now.getDay();
-                const currentHour = now.getHours();
-                
-                // Weekend night service (Friday to Saturday, Saturday to Sunday)
-                if ((day === 5 || day === 6) && currentHour >= 22) {
-                    return line.weekendNightInterval;
-                }
-                
-                // Peak hours
-                if ((currentHour >= 7 && currentHour < 10) || (currentHour >= 16 && currentHour < 20)) {
-                    return line.peakInterval;
-                }
-                
-                return line.regularInterval;
-            }
-
-            function generateScheduleForLine(lineName) {
-                const line = trainLines[lineName];
-                const schedule = {};
-                
-                // Generate schedule for all stations on the line
-                line.stations.forEach(station => {
-                    const firstDepartureStr = line.firstDeparture[station];
-                    if (!firstDepartureStr) {
-                        schedule[station] = [];
-                        return;
-                    }
-                    
-                    const [startHour, startMinute] = firstDepartureStr.split(':').map(Number);
-                    let minuteCounter = startHour * 60 + startMinute;
-                    
-                    const stationSchedule = [];
-                    const totalMinutesInDay = 24 * 60;
-                    
-                    while (minuteCounter < totalMinutesInDay) {
-                        const tempDate = new Date();
-                        tempDate.setHours(Math.floor(minuteCounter / 60));
-                        tempDate.setMinutes(minuteCounter % 60);
-
-                        const interval = getIntervalMinutes(tempDate, lineName);
-                        stationSchedule.push(tempDate);
-                        minuteCounter += interval;
-                    }
-                    schedule[station] = stationSchedule;
-                });
-                return schedule;
-            }
-
-            // Get references to UI elements
+            
+            // Populate select options
             const originSelect = document.getElementById('origin-station');
             const destinationSelect = document.getElementById('destination-station');
-            const searchButton = document.getElementById('search-button');
-            const swapButton = document.getElementById('swap-button');
-            const resultsContainer = document.getElementById('results-container');
-            const scheduleList = document.getElementById('schedule-list');
-            const travelTimeDisplay = document.getElementById('travel-time');
-            const statusMessage = document.getElementById('status-message');
 
-            // Populate dropdowns with station names
-            function populateDropdowns() {
-                stations.forEach(station => {
-                    const option1 = document.createElement('option');
-                    option1.value = station;
-                    option1.textContent = station;
-                    originSelect.appendChild(option1);
+            stations.forEach(station => {
+                const option1 = document.createElement('option');
+                option1.value = station;
+                option1.textContent = station;
+                originSelect.appendChild(option1);
 
-                    const option2 = document.createElement('option');
-                    option2.value = station;
-                    option2.textContent = station;
-                    destinationSelect.appendChild(option2);
-                });
+                const option2 = document.createElement('option');
+                option2.value = station;
+                option2.textContent = station;
+                destinationSelect.appendChild(option2);
+            });
 
-                // Set default values
-                originSelect.value = 'Ataköy';
-                destinationSelect.value = 'Yenikapı';
+            // Swap button functionality
+            document.getElementById('swap-button').addEventListener('click', () => {
+                const originValue = originSelect.value;
+                originSelect.value = destinationSelect.value;
+                destinationSelect.value = originValue;
+            });
+            
+            function calculateTravelTime(origin, destination, lineStations) {
+                const originIndex = lineStations.indexOf(origin);
+                const destinationIndex = lineStations.indexOf(destination);
+
+                if (originIndex === -1 || destinationIndex === -1) {
+                    return null;
+                }
+
+                const diff = Math.abs(originIndex - destinationIndex);
+                // Each station takes approximately 2 minutes travel time
+                // This is a simplified calculation and not official data.
+                return diff * 2; 
             }
 
-            function showStatus(message, isError = false) {
-                statusMessage.textContent = message;
-                statusMessage.className = `mt-4 text-center font-medium ${isError ? 'text-red-500' : 'text-gray-500'}`;
-            }
+            function getTrainSchedule(origin, destination) {
+                const now = new Date();
+                const currentHour = now.getHours();
+                const currentMinute = now.getMinutes();
+                const currentTimeInMinutes = currentHour * 60 + currentMinute;
+                
+                let schedules = [];
+                let frequency = 15; // default frequency
 
-            function findNextTrains() {
-                const origin = originSelect.value;
-                const destination = destinationSelect.value;
+                const day = now.getDay(); // 0 for Sunday, 1 for Monday, etc.
 
-                if (origin === destination) {
-                    showStatus('Lütfen farklı başlangıç ve varış istasyonları seçin.', true);
-                    resultsContainer.classList.add('hidden');
-                    return;
+                // Check for weekend night service (Friday/Saturday night)
+                const isWeekendNight = (day === 5 && currentHour >= 22) || (day === 6);
+                
+                if (isWeekendNight) {
+                    frequency = 20; // 20 minutes frequency after 22:00 on Friday/Saturday
+                } else if (
+                    (currentHour >= 7 && currentHour < 10) ||
+                    (currentHour >= 16 && currentHour < 20)
+                ) {
+                    frequency = 8; // Peak hours frequency
                 }
                 
-                showStatus(''); // Clear status message
-                resultsContainer.classList.remove('hidden');
-                scheduleList.innerHTML = ''; // Clear previous results
-
-                const now = new Date();
-                const nowMinutes = now.getHours() * 60 + now.getMinutes();
-
-                const originIndex = stations.indexOf(origin);
-                const destinationIndex = stations.indexOf(destination);
-
-                let allNextTrains = [];
-
-                Object.keys(trainLines).forEach(lineName => {
+                for (const lineName in trainLines) {
                     const line = trainLines[lineName];
-                    const startIdx = line.stations.indexOf(origin);
-                    const endIdx = line.stations.indexOf(destination);
+                    const originIndex = line.stations.indexOf(origin);
+                    const destinationIndex = line.stations.indexOf(destination);
 
-                    if (startIdx !== -1 && endIdx !== -1) {
-                        // Check if the direction is correct for this line
-                        const directionCorrect = (startIdx < endIdx);
-
-                        if (directionCorrect) {
-                            if (!schedules[lineName]) {
-                                schedules[lineName] = generateScheduleForLine(lineName);
-                            }
+                    if (originIndex !== -1 && destinationIndex !== -1) {
+                        const firstDeparture = line.firstDeparture[origin];
+                        if (firstDeparture) {
+                            const [firstDepHour, firstDepMinute] = firstDeparture.split(':').map(Number);
+                            let firstDepInMinutes = firstDepHour * 60 + firstDepMinute;
                             
-                            const lineSchedule = schedules[lineName][origin];
-                            if (!lineSchedule || lineSchedule.length === 0) {
-                                return;
+                            // Check if current time is before the last train of the day
+                            // A simple check to avoid infinite loops
+                            if (currentTimeInMinutes > (23 * 60)) {
+                                continue;
                             }
 
-                            let nextTrainIndex = -1;
-                            for (let i = 0; i < lineSchedule.length; i++) {
-                                const departureMinutes = lineSchedule[i].getHours() * 60 + lineSchedule[i].getMinutes();
-                                if (departureMinutes >= nowMinutes) {
-                                    nextTrainIndex = i;
-                                    break;
-                                }
+                            // Calculate next departure times
+                            let nextDepartureTimeInMinutes = firstDepInMinutes;
+                            while (nextDepartureTimeInMinutes < currentTimeInMinutes) {
+                                nextDepartureTimeInMinutes += frequency;
                             }
-                            
-                            if (nextTrainIndex !== -1) {
-                                for (let i = 0; i < 5; i++) {
-                                    if (nextTrainIndex + i < lineSchedule.length) {
-                                        allNextTrains.push({
-                                            time: lineSchedule[nextTrainIndex + i],
-                                            line: lineName,
-                                            direction: line.endStation
-                                        });
-                                    }
+
+                            for (let i = 0; i < 5; i++) {
+                                const departure = nextDepartureTimeInMinutes + i * frequency;
+                                const departureHour = Math.floor(departure / 60) % 24;
+                                const departureMinute = departure % 60;
+                                
+                                // Calculate arrival time for this specific train and line
+                                const travelTime = calculateTravelTime(origin, destination, line.stations);
+                                if (travelTime !== null) {
+                                    const arrival = departure + travelTime;
+                                    const arrivalHour = Math.floor(arrival / 60) % 24;
+                                    const arrivalMinute = arrival % 60;
+
+                                    schedules.push({
+                                        departure: `${String(departureHour).padStart(2, '0')}:${String(departureMinute).padStart(2, '0')}`,
+                                        arrival: `${String(arrivalHour).padStart(2, '0')}:${String(arrivalMinute).padStart(2, '0')}`,
+                                        line: lineName
+                                    });
                                 }
                             }
                         }
                     }
-                });
-
-                if (allNextTrains.length === 0) {
-                    // Check for reverse direction to give a more helpful message
-                    const isReverse = Object.keys(trainLines).some(lineName => {
-                        const line = trainLines[lineName];
-                        const startIdx = line.stations.indexOf(origin);
-                        const endIdx = line.stations.indexOf(destination);
-                        return startIdx !== -1 && endIdx !== -1 && (startIdx > endIdx);
-                    });
-                    if (isReverse) {
-                        showStatus("Seçtiğiniz duraklar arası seferler şu anda ters yönde ilerlemektedir.");
-                    } else {
-                        showStatus("Bu duraklar arasında sefer bulunmamaktadır veya seferler sona ermiştir.", true);
-                    }
-                    return;
                 }
                 
-                allNextTrains.sort((a, b) => a.time.getTime() - b.time.getTime());
-                const finalSchedule = allNextTrains.slice(0, 5);
-
-                const numStops = Math.abs(originIndex - destinationIndex);
-                const travelDurationMinutes = numStops * 2.5; 
-                travelTimeDisplay.textContent = `Tahmini seyahat süresi: ${Math.round(travelDurationMinutes)} dakika`;
-
-                finalSchedule.forEach(train => {
-                    const departureString = train.time.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' });
-                    const arrivalTime = new Date(train.time.getTime() + (travelDurationMinutes * 60000));
-                    const arrivalString = arrivalTime.toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' });
-
-                    const listItem = document.createElement('div');
-                    listItem.className = "flex justify-between items-center p-4 bg-white rounded-lg shadow-md";
-                    listItem.innerHTML = `
-                        <div class="text-sm font-medium text-gray-600">
-                            Kalkış: <span class="text-lg font-bold text-gray-800">${departureString}</span>
-                            <span class="block text-xs font-semibold text-blue-500">${train.line}</span>
-                        </div>
-                        <div class="text-sm font-medium text-gray-600">
-                            Varış: <span class="text-lg font-bold text-gray-800">${arrivalString}</span>
-                        </div>
-                    `;
-                    scheduleList.appendChild(listItem);
+                // Sort by departure time
+                schedules.sort((a, b) => {
+                    const aTime = parseInt(a.departure.replace(':', ''));
+                    const bTime = parseInt(b.departure.replace(':', ''));
+                    return aTime - bTime;
                 });
+                
+                return schedules;
             }
 
-            searchButton.addEventListener('click', findNextTrains);
+            document.getElementById('search-button').addEventListener('click', () => {
+                const origin = originSelect.value;
+                const destination = destinationSelect.value;
+                const scheduleList = document.getElementById('schedule-list');
+                const resultsContainer = document.getElementById('results-container');
+                const statusMessage = document.getElementById('status-message');
 
-            swapButton.addEventListener('click', () => {
-                const temp = originSelect.value;
-                originSelect.value = destinationSelect.value;
-                destinationSelect.value = temp;
-                showStatus('Başlangıç ve varış istasyonları değiştirildi.');
+                statusMessage.textContent = '';
+                scheduleList.innerHTML = '';
+                resultsContainer.classList.add('hidden');
+
+                if (origin === destination) {
+                    statusMessage.textContent = 'Başlangıç ve varış istasyonları aynı olamaz.';
+                    return;
+                }
+
+                const travelTime = calculateTravelTime(origin, destination, stations);
+
+                if (travelTime === null) {
+                     statusMessage.textContent = 'Seçtiğiniz istasyonlar aynı hat üzerinde değil.';
+                     return;
+                }
+
+                document.getElementById('travel-time').textContent = `Tahmini seyahat süresi: ${travelTime} dakika`;
+
+                const schedules = getTrainSchedule(origin, destination);
+                
+                if (schedules.length > 0) {
+                    schedules.forEach(schedule => {
+                        const scheduleItem = document.createElement('div');
+                        scheduleItem.className = 'p-3 bg-white rounded-xl shadow-md flex justify-between items-center';
+                        scheduleItem.innerHTML = `
+                            <div class="flex-1">
+                                <p class="text-xl font-bold text-blue-600">${schedule.departure}</p>
+                                <p class="text-sm text-gray-500">${schedule.line}</p>
+                            </div>
+                            <div class="text-center mx-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </div>
+                            <div class="flex-1 text-right">
+                                <p class="text-xl font-bold text-gray-800">${schedule.arrival}</p>
+                            </div>
+                        `;
+                        scheduleList.appendChild(scheduleItem);
+                    });
+                    resultsContainer.classList.remove('hidden');
+                } else {
+                    statusMessage.textContent = 'Bugün için sefer bulunamadı. Lütfen sefer saatlerini kontrol edin.';
+                }
             });
-
-            populateDropdowns();
         });
     </script>
 </body>
